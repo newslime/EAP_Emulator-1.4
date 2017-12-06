@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HSMS_SETTING_DIALOG DIALOGEX 0, 0, 173, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HSMS 通訊參數設定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Remote",IDC_STATIC,7,44,110,51
+    CONTROL         "",IDC_IPADDRESS_REMOTE,"SysIPAddress32",WS_TABSTOP,13,58,100,15
+    EDITTEXT        IDC_PORT_REMOTE,13,76,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Local",IDC_STATIC,7,102,110,51
+    CONTROL         "",IDC_IPADDRESS_LOCAL,"SysIPAddress32",WS_TABSTOP,13,115,100,15
+    EDITTEXT        IDC_PORT_LOCAL,13,133,30,14,ES_AUTOHSCROLL
+    GROUPBOX        "Role",IDC_STATIC,7,7,110,31
+    CONTROL         "Passive",IDC_RADIO_PASSIVE,"Button",BS_AUTORADIOBUTTON,11,20,50,10
+    CONTROL         "Active",IDC_RADIO_ACTIVE,"Button",BS_AUTORADIOBUTTON,65,20,50,10
+    PUSHBUTTON      "OK",IDOK,8,162,50,17
+    PUSHBUTTON      "Cancel",IDCANCEL,67,162,50,17
+    LTEXT           "Device ID",IDC_STATIC,127,6,32,8
+    EDITTEXT        IDC_DEVICE_ID,125,19,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_MSG_STRUCT_DIALOG DIALOGEX 0, 0, 260, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "訊息結構"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,94,201,63,18
+    LISTBOX         IDC_MSG_STRUCT,15,12,230,180,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,0
+ PRODUCTVERSION 1,5,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "FileDescription", "EAPEmulator"
+            VALUE "FileVersion", "1, 5, 0, 0"
+            VALUE "InternalName", "EAPEmulator"
+            VALUE "LegalCopyright", "Copyright (C) 2017"
+            VALUE "OriginalFilename", "EAPEmulator.rc"
+            VALUE "ProductName", "EAPEmulator"
+            VALUE "ProductVersion", "1, 5, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 479, 425
+STYLE DS_ABSALIGN | DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "EAP Emulator 1.50"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_SXFX_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,300,174,88
+    EDITTEXT        IDC_MSG_EDIT,0,0,478,299,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "",IDC_RECORD_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,173,300,305,88
+    ICON            "",IDC_STATIC2,1,391,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BITMAP,320,399,21,23
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "alphaInfo.ico"
+IDI_GREENCIRCLE_ICON    ICON                    "green_circle.ico"
+IDI_REDCIRCLE_ICON      ICON                    "red_circle.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 478
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

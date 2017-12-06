@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Values>
+	<S1F3>
+		<L>
+			<A>D3131</A>
+			<A>D3132</A>
+            <A>D3133</A>
+		</L>
+	</S1F3>
+    
+	<S1F15_OffLine>
+	</S1F15_OffLine>
+	
+	<S1F17_OnLine>
+	</S1F17_OnLine>
+
+</Values>
